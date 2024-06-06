@@ -66,7 +66,7 @@ def process(infile, outfile, sort_qgridlayout=True, remove_stdset=True, remove_n
         f.readline()
         newline = f.newlines
 
-    with open(outfile, 'w', newline=newline) as output_fp:
+    with open(outfile, 'w', newline=newline, encoding="utf-8") as output_fp:
         output_fp.write('<?xml version="1.0" encoding="UTF-8"?>\n')
         output_fp.write('%s' % output_unicode)
 
